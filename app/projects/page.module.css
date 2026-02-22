@@ -1,0 +1,149 @@
+.pageHeader {
+    padding: 10rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-hero);
+}
+
+.headerContent {
+    position: relative;
+    z-index: 1;
+}
+
+.headerSub {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* ========== PROJECTS GRID ========== */
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* ========== EMPTY STATE ========== */
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.emptyVisual {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.emptyOrb {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-glow-strong) 0%, transparent 70%);
+    animation: float 4s ease-in-out infinite;
+}
+
+.emptyIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--accent);
+    opacity: 0.4;
+}
+
+.emptyState h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.emptyState>p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 480px;
+    line-height: 1.7;
+}
+
+.emptyActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* ========== CAPABILITIES ========== */
+.capabilities {
+    width: 100%;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+}
+
+.capabilities h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.capGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.capCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.75rem;
+}
+
+.capIcon {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.capCard h4 {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+
+.capCard p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.capTech {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+
+    .projectsGrid,
+    .capGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .projectsGrid,
+    .capGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .emptyActions {
+        flex-direction: column;
+    }
+}
