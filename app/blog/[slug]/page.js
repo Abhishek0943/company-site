@@ -7,6 +7,9 @@ import Post from '@/models/Post';
 import { generateHTML } from '@tiptap/html/server';
 import { getTiptapExtensions } from '@/lib/tiptapConfig';
 
+export const dynamic = 'force-dynamic';
+
+
 async function getPostBySlug(slug) {
     try {
         await connectDB();
