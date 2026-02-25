@@ -252,3 +252,165 @@ asdf</code></pre><p xmlns="http://www.w3.org/1999/xhtml">asdf</p>
  GET /blog/tetswetwe 200 in 324ms (compile: 190ms, render: 134ms)
  GET /blog/test 200 in 341ms (compile: 146ms, render: 195ms)
  GET /blog 200 in 346ms (compile: 213ms, render: 133ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/test 200 in 475ms (compile: 14ms, render: 460ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog 200 in 85ms (compile: 10ms, render: 75ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 86ms (compile: 8ms, render: 78ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/test 200 in 84ms (compile: 9ms, render: 75ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tiptap-json 200 in 86ms (compile: 9ms, render: 78ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tiptap-json 200 in 113ms (compile: 14ms, render: 99ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog 200 in 97ms (compile: 10ms, render: 87ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog 200 in 101ms (compile: 8ms, render: 94ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 84ms (compile: 13ms, render: 71ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 104ms (compile: 6ms, render: 98ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 114ms (compile: 8ms, render: 106ms)
+✓ Compiled in 9ms
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 379ms (compile: 29ms, render: 349ms)
+ GET /blog/tetswetwe 200 in 336ms (compile: 210ms, render: 126ms)
+ GET /blog/tetswetwe 200 in 338ms (compile: 157ms, render: 180ms)
+ GET /blog 200 in 392ms (compile: 10ms, render: 382ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 429ms (compile: 11ms, render: 418ms)
+✓ Compiled in 7ms
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 349ms (compile: 31ms, render: 318ms)
+ GET /blog/tetswetwe 200 in 290ms (compile: 145ms, render: 145ms)
+ GET /blog/tetswetwe 200 in 291ms (compile: 187ms, render: 103ms)
+ GET /blog 200 in 359ms (compile: 7ms, render: 352ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 489ms (compile: 10ms, render: 479ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 396ms (compile: 5ms, render: 391ms)
+ GET /blog/tetswetwe 200 in 351ms (compile: 205ms, render: 146ms)
+ GET /blog/tetswetwe 200 in 377ms (compile: 169ms, render: 208ms)
+ GET /blog 200 in 412ms (compile: 29ms, render: 383ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 457ms (compile: 6ms, render: 451ms)
+✓ Compiled in 17ms
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 284ms (compile: 3ms, render: 281ms)
+ GET /blog/tetswetwe 200 in 256ms (compile: 137ms, render: 119ms)
+ GET /blog/tetswetwe 200 in 258ms (compile: 100ms, render: 158ms)
+ GET /blog 200 in 301ms (compile: 23ms, render: 278ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 400ms (compile: 5ms, render: 395ms)
+✓ Compiled in 80ms
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 303ms (compile: 3ms, render: 300ms)
+ GET /blog/tetswetwe 200 in 256ms (compile: 101ms, render: 155ms)
+ GET /blog 200 in 306ms (compile: 28ms, render: 278ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 131ms (compile: 52ms, render: 79ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 106ms (compile: 5ms, render: 101ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 114ms (compile: 11ms, render: 102ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 76ms (compile: 4ms, render: 71ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 89ms (compile: 4ms, render: 85ms)
+✓ Compiled in 64ms
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 415ms (compile: 218ms, render: 196ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 501ms (compile: 151ms, render: 351ms)
+ GET /blog/tetswetwe 200 in 512ms (compile: 102ms, render: 410ms)
+ GET /blog/tetswetwe 200 in 261ms (compile: 7ms, render: 254ms)
+ GET /blog 200 in 375ms (compile: 8ms, render: 368ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /admin/editor 200 in 323ms (compile: 3ms, render: 320ms)
+ GET /blog/tetswetwe 200 in 307ms (compile: 128ms, render: 179ms)
+ GET /blog 200 in 309ms (compile: 3ms, render: 306ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 173ms (compile: 57ms, render: 116ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 452ms (compile: 8ms, render: 444ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 101ms (compile: 11ms, render: 90ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 110ms (compile: 3ms, render: 107ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog/tetswetwe 200 in 103ms (compile: 3ms, render: 100ms)
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+ GET /blog 200 in 91ms (compile: 10ms, render: 81ms)
+ GET /blog/mastering-next-js-15 200 in 93ms (compile: 9ms, render: 84ms)

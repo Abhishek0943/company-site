@@ -103,7 +103,6 @@ export default async function BlogPostPage({ params }) {
                         </Link>
                     </div>
                 </div>
-
             </div>
         </article>
     );

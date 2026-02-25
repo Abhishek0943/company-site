@@ -41,14 +41,14 @@ export default function HtmlRenderer({ html }) {
                             <div className="relative">
                                 <div className="text-[14px] p-0 " style={{ marginBottom: "1rem", borderRadius: "16px", overflow: "hidden", }}>
                                     <div style={{ padding: "1rem", background: "#11151f", borderBottom: "1px solid #282b31ff", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                        <p className="text-gray-400 text-sm leading-relaxed max-w-md" style={{ textTransform: "capitalize", display: "flex", alignItems: "center", gap: "8px", color: "#0ed3cf" }}>
+                                        <div className="text-gray-400 text-sm leading-relaxed max-w-md" style={{ textTransform: "capitalize", display: "flex", alignItems: "center", gap: "8px", color: "#0ed3cf" }}>
                                             <div style={{ display: "flex", gap: "8px" }}>
                                                 <div style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: "#ff5f57" }}></div>
                                                 <div style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: "#ffbd2e" }}></div>
                                                 <div style={{ width: "12px", height: "12px", borderRadius: "50%", backgroundColor: "#27c93f" }}></div>
                                             </div>
                                             {language}
-                                        </p>
+                                        </div>
                                         <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
                                             <CopyCodeButton text={codeString} />
                                         </div>
