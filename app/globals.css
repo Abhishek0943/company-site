@@ -110,7 +110,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-display);
+  font-family: var(--font-display) !important;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -460,6 +460,40 @@ img {
 ::selection {
   background: var(--accent);
   color: var(--bg-primary);
+}
+
+/* --- TipTap Editor Overrides --- */
+.ProseMirror img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ProseMirror pre {
+  background: #11151f;
+  color: #fff;
+  font-family: var(--font-mono);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid #2b3040;
+}
+
+.ProseMirror pre code {
+  color: inherit;
+  font-size: 0.9rem;
+}
+
+.ProseMirror p code {
+  background: var(--bg-card);
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
 }
 
 /* --- Responsive --- */

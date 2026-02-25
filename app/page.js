@@ -5,10 +5,31 @@ import { projects } from "@/data/projects";
 import { testimonials } from "@/data/testimonials";
 import ServiceCard from "@/components/ServiceCard";
 import ProjectCard from "@/components/ProjectCard";
+import FAQSection from "@/components/FAQSection";
+import HomeBlogSection from "@/components/HomeBlogSection";
+import connectDB from "@/lib/mongodb";
+import Post from "@/models/Post";
 import styles from "./page.module.css";
 
-export default function Home() {
+export const dynamic = 'force-dynamic';
+
+async function getRecentPosts() {
+  try {
+    await connectDB();
+    const posts = await Post.find({ published: true })
+      .sort({ createdAt: -1 })
+      .limit(3)
+      .lean();
+    return posts;
+  } catch (error) {
+    console.error('Error fetching latest posts:', error);
+    return [];
+  }
+}
+
+export default async function Home() {
   const featuredProjects = projects.filter((p) => p.featured);
+  const recentPosts = await getRecentPosts();
 
   return (
     <>
@@ -195,6 +216,12 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* ========== BLOG SECTION ========== */}
+      <HomeBlogSection posts={recentPosts} />
+
+      {/* ========== FAQ SECTION ========== */}
+      <FAQSection />
 
       {/* ========== CTA ========== */}
       <section className={`section ${styles.ctaSection}`}>

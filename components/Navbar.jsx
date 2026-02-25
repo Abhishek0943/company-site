@@ -9,6 +9,7 @@ const navLinks = [
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/projects", label: "Projects" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
 ];
 
@@ -26,6 +27,10 @@ export default function Navbar() {
     useEffect(() => {
         setIsOpen(false);
     }, [pathname]);
+
+    if (pathname && pathname.startsWith('/admin')) {
+        return null;
+    }
 
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
