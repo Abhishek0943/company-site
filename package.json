@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@next/third-parties": "^16.1.6",
     "@tiptap/extension-code-block-lowlight": "^3.20.0",
     "@tiptap/extension-highlight": "^3.20.0",
     "@tiptap/extension-image": "^3.20.0",

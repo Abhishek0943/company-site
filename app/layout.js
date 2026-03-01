@@ -86,6 +86,8 @@ export const metadata = {
   },
 };
 
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable} ${jetbrains.variable}`}>
@@ -93,6 +95,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <GoogleAnalytics gaId="G-22YFGLHGN1" />
       </body>
     </html>
   );
