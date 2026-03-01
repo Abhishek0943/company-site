@@ -11,7 +11,7 @@ import connectDB from "@/lib/mongodb";
 import Post from "@/models/Post";
 import styles from "./page.module.css";
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60; // Revalidate every 60 seconds (ISR)
 
 async function getRecentPosts() {
   try {

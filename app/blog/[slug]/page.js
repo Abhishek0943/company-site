@@ -7,7 +7,7 @@ import Post from '@/models/Post';
 import { generateHTML } from '@tiptap/html/server';
 import { getTiptapExtensions } from '@/lib/tiptapConfig';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60; // Revalidate every 60 seconds (ISR)
 
 
 async function getPostBySlug(slug) {
