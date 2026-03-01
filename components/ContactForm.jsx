@@ -10,17 +10,39 @@ export default function ContactForm() {
         message: "",
     });
     const [status, setStatus] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // For now, just show success. Integrate with API later.
-        setStatus("success");
-        setTimeout(() => setStatus(""), 4000);
-        setFormData({ name: "", email: "", subject: "", message: "" });
+        setIsLoading(true);
+        setStatus("");
+
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (res.ok) {
+                setStatus("success");
+                setFormData({ name: "", email: "", subject: "", message: "" });
+                setTimeout(() => setStatus(""), 5000);
+            } else {
+                setStatus("error");
+            }
+        } catch (error) {
+            console.error(error);
+            setStatus("error");
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -87,13 +109,23 @@ export default function ContactForm() {
                     className={styles.textarea}
                 />
             </div>
-            <button type="submit" className={`btn btn-primary ${styles.submitBtn}`}>
-                Send Message
-                <span>→</span>
+            <button
+                type="submit"
+                className={`btn btn-primary ${styles.submitBtn}`}
+                disabled={isLoading}
+                style={{ opacity: isLoading ? 0.7 : 1, cursor: isLoading ? 'not-allowed' : 'pointer' }}
+            >
+                {isLoading ? "Sending..." : "Send Message"}
+                {!isLoading && <span>→</span>}
             </button>
             {status === "success" && (
                 <p className={styles.success}>
                     ✓ Message sent successfully! We&apos;ll get back to you soon.
+                </p>
+            )}
+            {status === "error" && (
+                <p style={{ color: "var(--accent)", marginTop: "1rem", fontSize: "0.9rem" }}>
+                    ⚠ Something went wrong. Please try again or email us directly.
                 </p>
             )}
         </form>
