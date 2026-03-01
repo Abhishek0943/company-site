@@ -38,7 +38,7 @@ export default function Navbar() {
                 <Link href="/" className={styles.logo}>
                     <span className={styles.logoIcon}>⟐</span>
                     <span className={styles.logoText}>
-                        Pundir<span className={styles.logoAccent}>Tech</span>
+                        Vexio<span className={styles.logoAccent}>App</span>
                     </span>
                 </Link>
 

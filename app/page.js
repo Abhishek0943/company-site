@@ -126,10 +126,10 @@ export default async function Home() {
                 <span className={styles.codeDot} style={{ background: "#ff5f56" }}></span>
                 <span className={styles.codeDot} style={{ background: "#ffbd2e" }}></span>
                 <span className={styles.codeDot} style={{ background: "#27c93f" }}></span>
-                <span className={styles.codeTitle}>pundir-tech.js</span>
+                <span className={styles.codeTitle}>vexioapp.js</span>
               </div>
               <pre className={styles.codeContent}>
-                {`const PundirTech = {
+                {`const VexioApp = {
   expertise: [
     "React & Next.js",
     "React Native",

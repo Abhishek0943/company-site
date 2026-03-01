@@ -39,8 +39,14 @@ export async function generateMetadata({ params }) {
     }
 
     return {
-        title: `${post.title} - Pundir Tech`,
+        title: `${post.title} - VexioApp`,
         description: textDescription,
+        openGraph: {
+            title: `${post.title} - VexioApp`,
+            description: textDescription,
+            type: 'article',
+            images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+        },
     };
 }
 
@@ -97,7 +103,7 @@ export default async function BlogPostPage({ params }) {
 
                 <div style={{ marginTop: "3rem", backgroundColor: "#0a0a0a", border: "1px solid #282b31ff", borderRadius: "16px", padding: "2rem" }} className="p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-8 shadow-2xl">
                     <div className="text-center sm:text-left">
-                        <h3 className="text-xl font-bold mb-2">Pundir Tech</h3>
+                        <h3 className="text-xl font-bold mb-2">VexioApp</h3>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4 max-w-md">
                             We build scalable architectures, stunning user interfaces, and robust backend systems for modern businesses.
                         </p>

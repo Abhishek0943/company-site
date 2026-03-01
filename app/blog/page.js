@@ -20,8 +20,13 @@ async function getPublishedPosts() {
 }
 
 export const metadata = {
-    title: 'Blog - Pundir Tech Insights',
-    description: 'Read the latest thoughts and tutorials from Pundir Tech.',
+    title: 'Blog - VexioApp Insights',
+    description: 'Read the latest thoughts, tutorials, and technical deep-dives from VexioApp.',
+    openGraph: {
+        title: 'Blog - VexioApp Insights',
+        description: 'Read the latest thoughts, tutorials, and technical deep-dives from VexioApp.',
+        images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    },
 };
 
 export default async function BlogIndex() {

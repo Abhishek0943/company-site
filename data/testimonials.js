@@ -7,7 +7,7 @@ export const testimonials = [
         name: "Rajesh Kumar",
         role: "CEO, TechStart India",
         content:
-            "Pundir Tech delivered our mobile app ahead of schedule with exceptional quality. The real-time features work flawlessly, and user feedback has been overwhelmingly positive.",
+            "VexioApp delivered our mobile app ahead of schedule with exceptional quality. The real-time features work flawlessly, and user feedback has been overwhelmingly positive.",
         rating: 5,
     },
     {

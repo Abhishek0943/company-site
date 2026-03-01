@@ -1,10 +1,10 @@
 export const company = {
-  name: "Pundir Tech",
+  name: "VexioApp",
   tagline: "Building Digital Futures",
   description:
     "We craft scalable web and mobile applications with cutting-edge technology. From concept to deployment, we deliver solutions that drive results.",
   longDescription:
-    "Founded by Abhishek Pundir, Pundir Tech is an IT services company specializing in full-stack web development, cross-platform mobile applications, and cloud infrastructure. With 3+ years of hands-on experience delivering production-grade software, we transform ideas into powerful digital products.",
+    "Founded by Abhishek Pundir, VexioApp is an IT services company specializing in full-stack web development, cross-platform mobile applications, and cloud infrastructure. With 3+ years of hands-on experience delivering production-grade software, we transform ideas into powerful digital products.",
   founder: {
     name: "Abhishek Pundir",
     title: "Founder & Lead Developer",

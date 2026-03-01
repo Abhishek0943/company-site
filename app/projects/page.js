@@ -4,9 +4,14 @@ import ProjectCard from "@/components/ProjectCard";
 import styles from "./page.module.css";
 
 export const metadata = {
-    title: "Projects — Pundir Tech",
+    title: "Projects — VexioApp",
     description:
         "Explore our portfolio of web and mobile applications built with modern technologies.",
+    openGraph: {
+        title: "Projects — VexioApp",
+        description: "Explore our portfolio of web and mobile applications built with modern technologies.",
+        images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    },
 };
 
 export default function ProjectsPage() {

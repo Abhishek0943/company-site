@@ -32,7 +32,7 @@ export default function Footer() {
                         <Link href="/" className={styles.logo}>
                             <span className={styles.logoIcon}>⟐</span>
                             <span>
-                                Pundir<span className={styles.accent}>Tech</span>
+                                Vexio<span className={styles.accent}>App</span>
                             </span>
                         </Link>
                         <p className={styles.brandDescription}>{company.description}</p>
@@ -101,7 +101,7 @@ export default function Footer() {
 
                 <div className={styles.footerBottom}>
                     <p>
-                        © {new Date().getFullYear()} Pundir Tech. All rights reserved.
+                        © {new Date().getFullYear()} VexioApp. All rights reserved.
                     </p>
                     <p className={styles.madeWith}>
                         Crafted with precision & passion

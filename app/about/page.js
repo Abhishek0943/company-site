@@ -3,9 +3,14 @@ import { company, experience, techStack } from "@/data/company";
 import styles from "./page.module.css";
 
 export const metadata = {
-    title: "About — Pundir Tech",
+    title: "About — VexioApp",
     description:
-        "Learn about Pundir Tech, our mission, experience, and the technology stack we use to build scalable digital solutions.",
+        "Learn about VexioApp, our mission, experience, and the technology stack we use to build scalable digital solutions.",
+    openGraph: {
+        title: "About — VexioApp",
+        description: "Learn about VexioApp, our mission, experience, and the technology stack we use to build scalable digital solutions.",
+        images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    },
 };
 
 export default function AboutPage() {
@@ -21,7 +26,7 @@ export default function AboutPage() {
                     <h1 className="animate-fade-up">
                         The Team Behind
                         <br />
-                        <span className="gradient-text">Pundir Tech</span>
+                        <span className="gradient-text">VexioApp</span>
                     </h1>
                     <p className={`${styles.headerSub} animate-fade-up delay-2`}>
                         {company.longDescription}

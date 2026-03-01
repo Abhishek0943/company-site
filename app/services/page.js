@@ -2,9 +2,14 @@ import { services } from "@/data/services";
 import styles from "./page.module.css";
 
 export const metadata = {
-    title: "Services — Pundir Tech",
+    title: "Services — VexioApp",
     description:
         "Explore our IT services: web development, mobile apps, API & backend, cloud & DevOps, real-time solutions, and ERP systems.",
+    openGraph: {
+        title: "Services — VexioApp",
+        description: "Explore our IT services: web development, mobile apps, API & backend, cloud & DevOps, real-time solutions, and ERP systems.",
+        images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    },
 };
 
 export default function ServicesPage() {

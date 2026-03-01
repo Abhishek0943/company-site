@@ -3,9 +3,14 @@ import ContactForm from "@/components/ContactForm";
 import styles from "./page.module.css";
 
 export const metadata = {
-    title: "Contact — Pundir Tech",
+    title: "Contact — VexioApp",
     description:
-        "Get in touch with Pundir Tech. Let's discuss your next web or mobile app project.",
+        "Get in touch with VexioApp. Let's discuss your next web or mobile app project.",
+    openGraph: {
+        title: "Contact — VexioApp",
+        description: "Get in touch with VexioApp. Let's discuss your next web or mobile app project.",
+        images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    },
 };
 
 export default function ContactPage() {
