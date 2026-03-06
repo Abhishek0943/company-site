@@ -78,7 +78,7 @@ export default function HtmlRenderer({ html }) {
     };
 
     return (
-        <div className="prose prose-invert prose-p:my-6 prose-p:leading-loose prose-p:text-[17px] prose-p:text-gray-300 prose-headings:mb-6 prose-headings:mt-12 prose-headings:font-bold prose-pre:m-0 max-w-none prose-a:text-[#0ed3cf] prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl prose-img:shadow-2xl prose-li:text-[17px] prose-li:text-gray-300 prose-li:my-2 prose-ul:my-6 prose-ol:my-6">
+        <div id="blog-content" className="prose prose-invert prose-p:my-6 prose-p:leading-loose prose-p:text-[17px] prose-p:text-gray-300 prose-headings:mb-6 prose-headings:mt-12 prose-headings:font-bold prose-pre:m-0 max-w-none prose-a:text-[#0ed3cf] prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl prose-img:shadow-2xl prose-li:text-[17px] prose-li:text-gray-300 prose-li:my-2 prose-ul:my-6 prose-ol:my-6">
             {parse(html, options)}
         </div>
     );

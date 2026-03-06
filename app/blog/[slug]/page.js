@@ -21,6 +21,20 @@ async function getPostBySlug(slug) {
     }
 }
 
+async function getRelatedPosts(currentSlug) {
+    try {
+        await connectDB();
+        const related = await Post.find({ slug: { $ne: currentSlug }, published: true })
+            .sort({ createdAt: -1 })
+            .limit(2)
+            .lean();
+        return related;
+    } catch (error) {
+        console.error('Error fetching related posts:', error);
+        return [];
+    }
+}
+
 export async function generateMetadata({ params }) {
     const { slug } = await params;
     const post = await getPostBySlug(slug);
@@ -53,6 +67,7 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
     const { slug } = await params;
     const post = await getPostBySlug(slug);
+    const relatedPosts = await getRelatedPosts(slug);
 
     if (!post) {
         notFound();
@@ -101,7 +116,24 @@ export default async function BlogPostPage({ params }) {
                 </main>
 
 
-                <div style={{ marginTop: "3rem", backgroundColor: "#0a0a0a", border: "1px solid #282b31ff", borderRadius: "16px", padding: "2rem" }} className="p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-8 shadow-2xl">
+                {relatedPosts.length > 0 && (
+                    <div style={{ marginTop: "6rem", paddingTop: "4rem", borderTop: "1px solid var(--border)" }}>
+                        <h2 style={{ fontSize: "2rem", fontFamily: "var(--font-body)", marginBottom: "2rem", fontWeight: 800 }}>Read Next</h2>
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "2rem" }}>
+                            {relatedPosts.map((relatedPost) => (
+                                <Link href={`/blog/${relatedPost.slug}`} key={relatedPost.id} className="card" style={{ display: "flex", flexDirection: "column", textDecoration: "none" }}>
+                                    <h3 style={{ fontSize: "1.25rem", fontFamily: "var(--font-body)", marginBottom: "1rem", color: "var(--text-primary)" }}>{relatedPost.title}</h3>
+                                    <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "var(--accent)", marginTop: "auto", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                                        Read Article <span>→</span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+
+                <div style={{ marginTop: "4rem", backgroundColor: "#0a0a0a", border: "1px solid #282b31ff", borderRadius: "16px", padding: "2rem" }} className="p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-8 shadow-2xl">
                     <div className="text-center sm:text-left">
                         <h3 className="text-xl font-bold mb-2">VexioApp</h3>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4 max-w-md">

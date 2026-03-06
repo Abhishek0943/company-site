@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LogoutButton from '../../components/LogoutButton';
 import '../globals.css';
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function AdminLayout({ children }) {
                         <Link href="/" target="_blank" style={{ fontSize: "0.9rem", color: "var(--text-secondary)", fontWeight: 500, textDecoration: "none" }}>
                             View Website ↗
                         </Link>
+                        <LogoutButton />
                     </nav>
                 </div>
             </header>
